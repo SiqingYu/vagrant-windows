@@ -44,6 +44,14 @@ ssh 192.168.33.10 -l vagrant
 
 The password is also `vagrant`.
 
+## Problems
+
+### Stuck at startup
+
+Sometimes Vagrant gets stuck in the `vagrant up` or `vagrant reload` process.
+
+The solution is to send an ACPI shutdown signal from Virtualbox GUI, though I don't know the reason.
+
 ## Other Options?
 
 ### Why not Hyper-V?
