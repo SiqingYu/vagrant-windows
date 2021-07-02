@@ -52,6 +52,12 @@ Sometimes Vagrant gets stuck in the `vagrant up` or `vagrant reload` process.
 
 The solution is to send an ACPI shutdown signal from Virtualbox GUI, though I don't know the reason.
 
+### ExpressVPN
+
+ExpressVPN disrupts an already-running VM's networking. `vagrant reload` doesn't fixes it. The VM must be recreated to work under ExpressVPN.
+
+It'd better to create the Vagrant VM after ExpressVPN.
+
 ## Other Options?
 
 ### Why not Hyper-V?
